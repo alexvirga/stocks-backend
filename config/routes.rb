@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/logged_in", to: "sessions#is_logged_in?"
   patch "/users/:id", to: "users#update"
   resources :users
+  resources :trades
 
   # resources :users, only: [:create, :show, :index]
 end
