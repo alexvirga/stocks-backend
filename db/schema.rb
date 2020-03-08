@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_05_073425) do
+ActiveRecord::Schema.define(version: 2020_03_08_013716) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "trades", force: :cascade do |t|
     t.string "stock"
-    t.integer "cost_per_share"
-    t.integer "quantity"
+    t.float "cost_per_share"
+    t.float "quantity"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
