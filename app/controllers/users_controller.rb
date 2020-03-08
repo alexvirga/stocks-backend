@@ -42,7 +42,14 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     @user.update(user_params)
-    render json: @user, include: [:trades]
+    if @user.save
+      render json: @user, include: [:trades]
+    else
+      render json: {
+        status: 500,
+        errors: @user.errors.full_messages,
+      }
+    end
   end
 
   private
