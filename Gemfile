@@ -28,6 +28,7 @@ gem "jbuilder", "~> 2.5"
 # gem 'bcrypt', '~> 3.1.7'
 gem "bcrypt"
 gem "rack-cors"
+gem "google-cloud-storage", "~> 1.8", require: false
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
