@@ -9,6 +9,6 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins "http://localhost:5432"
+    origins "https://cors-anywhere.herokuapp.com/https:/fast-savannah-59172.herokuapp.com"
   end
 end
